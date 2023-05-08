@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinhe o número</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload id="body">
+    <script src="script.js" load></script>
+    <fieldset id="field1">
+        <h1 id="titulo">Adivinhe o número</h1>
+        <h2 id="fases"></h2>
+        <h2 id="derrota"><strong>Você perdeu!</strong></h2>
+        <div class="container">
+            <h2 id="acertou"><strong>Você acertou!&nbsp</strong></h2><h2 id="acertouextra">Você ganhou um coração extra!</h2>
+        </div>
+    </fieldset>
+    <fieldset id="field2">
+        <form action="">
+            <div class="container">
+                <p id="vida1">❤</p><p id="vida2">❤</p> <p id="vida3">❤</p><p id="vida4">❤</p><p id="vida5">❤</p><p id="vidaextra1"></p><p id="vidaextra2"></p><p id="vidaextra3"></p><p id="vidaextra4"></p><p id="vidaextra5"></p>
+            </div>
+            <p id="resultado"></p>
+            <p id="dica"></p>
+            <label for="">Chute o número:</label>
+            <input type="number" id="numero">
+            <input type="submit" value="Chutar" onclick="main()" id="enviar">
+        </form>
+        <p id="pontos">Pontos: 0</p>
+    </fieldset>
+    <fieldset id="field3">
+        <div class="container">
+            <input type="button" value="Modo claro" id="darkmode" onclick="darkMode()">
+            <input type="button" value="Como jogar?" id="ajudabotao" onclick="ajuda()">
+            <input type="button" value="Reiniciar" id="reiniciar" onclick="location.reload()">
+        </div>
+      <a href="https://replit.com/@inkma" target="_ blank"><p id="author">@inkma</p></a>
+        <p id="ajuda">O objetivo do jogo é acertar a pontuação correta dentro do limite estabelecido. O jogador inicia o jogo com 5 vidas e um limite de pontuação que varia de 0 a 10. A medida que o jogador acerta a pontuação correta, o limite aumenta gradualmente, proporcionando um desafio cada vez maior.<br>Ao acertar a pontuação, o jogador também recupera suas vidas, permitindo que ele continue jogando. Por outro lado, se o jogador errar a pontuação, ele perderá uma vida. Se o jogador perder todas as suas vidas, o jogo será encerrado e ele terá que começar novamente.</p>
+    </fieldset>
+</body>
+</html>
